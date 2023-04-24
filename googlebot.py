@@ -577,7 +577,7 @@ def publish():
             __result = '{uri.scheme}://{uri.netloc}/'.format(uri=__parsed_uri)
             __hostname = __result
             #if "translate.g" in step1 or search_array(list_search, __hostname) == 11 or "translate.google" in step1 or ".pdf" in step1 or ".docx" in step1 or ".doc" in step1 or ".jpeg" in step1 or ".webp" in step1 or ".rar" in step1 or "wikipedia." in step1 or "dictionnaire" in step1 or "dictionnaire." in step1 or "faeebook." in step1 or "tikok." in step1 or "/download/" in step1:
-            EXCLUDED_KEYWORDS = ["translate.g", "translate.google", ".pdf", ".docx", ".doc", ".jpeg", ".webp", ".rar", "wikipedia.", "dictionnaire", "dictionnaire.", "faeebook.", "tikok.", "/download/"]
+            EXCLUDED_KEYWORDS = ["translate.g", "translate.google", ".pdf", ".docx", ".doc", ".jpeg", ".webp", ".rar", "wikipedia.", "dictionnaire", "dictionnaire.", "faeebook.", "tikok.", "/download/", "/apt/", "apt/", ".txt"]
             if any(keyword in str(step1) for keyword in EXCLUDED_KEYWORDS):
                 pass
             else:
