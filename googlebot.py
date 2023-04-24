@@ -526,7 +526,7 @@ def publish():
     option.add_argument("--mute-audio")
     option.add_argument("--headless")
     option.add_argument("user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1")
-    word_file = r"/opt/lampp/htdocs/avis-review.com/scrap/B/words_alpha.txt"
+    word_file = r"C:/Users/admin/Documents/DEV TEST/ucoz-seo/words_alpha.txt"
     WORDSSSS = open(word_file).read().splitlines()
     driverinstance = webdriver.Firefox(options=option)
     count_WORDS= (len(WORDSSSS))
@@ -577,7 +577,7 @@ def publish():
             __result = '{uri.scheme}://{uri.netloc}/'.format(uri=__parsed_uri)
             __hostname = __result
             #if "translate.g" in step1 or search_array(list_search, __hostname) == 11 or "translate.google" in step1 or ".pdf" in step1 or ".docx" in step1 or ".doc" in step1 or ".jpeg" in step1 or ".webp" in step1 or ".rar" in step1 or "wikipedia." in step1 or "dictionnaire" in step1 or "dictionnaire." in step1 or "faeebook." in step1 or "tikok." in step1 or "/download/" in step1:
-            EXCLUDED_KEYWORDS = ["translate.g", "translate.google", ".pdf", ".docx", ".doc", ".jpeg", ".webp", ".rar", "wikipedia.", "dictionnaire", "dictionnaire.", "faeebook.", "tikok.", "/download/", "/apt/", "apt/", ".txt"]
+            EXCLUDED_KEYWORDS = ["translate.g", "translate.google", ".pdf", ".docx", ".doc", ".jpeg", ".webp", ".rar", "wikipedia.", "dictionnaire", "dictionnaire.", "faeebook.", "tikok.", "/download/", "/apt/", "apt/", ".txt", "amazon.", "adobe.", ".lingue", "-francais", "/traduction/", "/dictionary", "/traduction/", ".ebay", ".fnac", "/traduction/"]
             if any(keyword in str(step1) for keyword in EXCLUDED_KEYWORDS):
                 pass
             else:
